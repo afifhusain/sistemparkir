@@ -15,7 +15,7 @@ class Masuk extends CI_Controller {
 		$this->form_validation->set_rules('username', 'username', 'required|trim');
 		$this->form_validation->set_rules('password', 'password', 'required|trim');
 
-		if( $this->form_validation->run() == false ){
+		if($this->form_validation->run() == false){
 			$this->load->view('desain/header');
 			$this->load->view('login/index');
 			$this->load->view('desain/footer');
@@ -51,7 +51,7 @@ class Masuk extends CI_Controller {
 		if ( $this->form_validation->run() == false ) {
 		$data['title'] = 'Halaman Registrasi';
 		$this->load->view('desain/header', $data);
-		$this->load->view('masuk/index');
+		$this->load->view('register/index');
 		$this->load->view('desain/footer');
 		} else {
 			$data = [

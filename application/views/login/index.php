@@ -14,15 +14,13 @@
         </div>
  
 
-
-
-
+    <?= $this->session->flashdata('message');  ?>
     <form method="post" action="<?= base_url('masuk');?>">
    
         <div class="input-field">
           <i class="material-icons prefix">account_circle</i>
-          <input id="username" type="text"  name="username">
-          <label for="icon_prefix">Username</label>
+          <input id="username" type="text"  name="username" value="<?= set_value('username'); ?>">
+          <label for="icon_prefix">username</label>
           <?= form_error('username', ' <small class="text-danger pl-3">', '</small>'); ?>
         </div>
 
