@@ -22,7 +22,11 @@ class Tampildata extends CI_Controller {
 
 	public function user()
 	{
-		echo "Halaman user";
+		$data['kendaraan'] = $this->Modeltampildata->tampildataUser();
+
+		$this->load->view('desain/header');
+		$this->load->view('tampildata/user', $data);
+		$this->load->view('desain/footer');
 	}
 
 
