@@ -14,12 +14,21 @@ class Tampildata extends CI_Controller {
 	{
 		$data['kendaraan'] = $this->Modeltampildata->tampildataAdmin();
 
-		$this->load->view('desain/header');
-		$this->load->view('tampildata/admin', $data);
+		//$this->load->view('desain/header');
+		$this->load->view('adminview/admin', $data);
+		$this->load->view('adminview/tampildata', $data);
+
 		$this->load->view('desain/footer');
 
 	}
 
+	public function adminview()
+	{
+		$this->load->view('desain/admheader');
+		$this->load->view('adminview/tampildata');
+		$this->load->view('desain/admfooter');
+	}
+ 
 	public function user()
 	{
 		$data['kendaraan'] = $this->Modeltampildata->tampildataUser();

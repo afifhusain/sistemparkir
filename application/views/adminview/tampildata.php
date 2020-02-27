@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--================================================================================
-	Item Name: Materialize - Material Design Admin Template
-	Version: 4.0
-	Author: PIXINVENT
-	Author URL: https://themeforest.net/user/pixinvent/portfolio
-================================================================================ -->
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="msapplication-tap-highlight" content="no">
-  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
-  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-  <title>Cards | Materialize - Material Design Admin Template</title>
-  <!-- Favicons-->
-  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
-  <!-- Favicons-->
-  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
-  <!-- For iPhone -->
-  <meta name="msapplication-TileColor" content="#00bcd4">
-  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
-  <!-- For Windows Phone -->
-  <!-- CORE CSS-->
-  <link href="css//materialize.css" type="text/css" rel="stylesheet">
-  <link href="css//style.css" type="text/css" rel="stylesheet">
-  <!-- Custome CSS-->
-  <link href="css/custom/custom.css" type="text/css" rel="stylesheet">
-  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-  <link href="vendors/prism/prism.css" type="text/css" rel="stylesheet">
-  <link href="vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
-  <link href="vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
-</head>
-
-<body>
   <!-- Start Page Loading -->
   <div id="loader-wrapper">
     <div id="loader"></div>
@@ -53,7 +17,7 @@
             <li>
               <h1 class="logo-wrapper">
                 <a href="index.html" class="brand-logo darken-1">
-                    <img src="images/logo/materialize-logo.png" alt="materialize logo">
+                    <img src="<?= base_url('vendor/'); ?>images/logo/materialize-logo.png" alt="materialize logo">
                     <span class="logo-text hide-on-med-and-down">Materialize</span>
                   </a>
               </h1>
@@ -84,7 +48,7 @@
             <li>
               <a href="javascript:void(0);" class="waves-effect waves-block waves-light profile-button" data-activates="profile-dropdown">
                   <span class="avatar-status avatar-online">
-                    <img src="images/avatar/avatar-7.png" alt="avatar">
+                    <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-7.png" alt="avatar">
                     <i></i>
                   </span>
                 </a>
@@ -189,7 +153,7 @@
           <li class="user-details cyan darken-2">
             <div class="row">
               <div class="col col s4 m4 l4">
-                <img src="images/avatar/avatar-7.png" alt="" class="circle responsive-img valign profile-image cyan">
+                <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-7.png" alt="" class="circle responsive-img valign profile-image cyan">
               </div>
               <div class="col col s8 m8 l8">
                 <ul id="profile-dropdown-nav" class="dropdown-content">
@@ -405,7 +369,7 @@
                   <div class="col s12 m6 l6">
                     <div class="card">
                       <div class="card-image">
-                        <img src="images/gallary/4.png" alt="sample">
+                        <img src="<?= base_url('vendor/'); ?>images/gallary/4.png" alt="sample">
                         <span class="card-title">Card Title</span>
                       </div>
                       <div class="card-content">
@@ -420,7 +384,7 @@
                   <div class="col s12 m6 l6">
                     <div class="card">
                       <div class="card-image">
-                        <img src="images/gallary/3.png" alt="sample">
+                        <img src="<?= base_url('vendor/'); ?>images/gallary/3.png" alt="sample">
                         <span class="card-title">Card Title</span>
                       </div>
                       <div class="card-content">
@@ -448,7 +412,7 @@
                   <div class="col s12 m6 l6">
                     <div class="card">
                       <div class="card-image">
-                        <img src="images/gallary/6.png">
+                        <img src="<?= base_url('vendor/'); ?>images/gallary/6.png">
                         <span class="card-title">Card Title</span>
                         <a class="btn-floating halfway-fab waves-effect waves-light red">
                             <i class="material-icons">add</i>
@@ -462,7 +426,7 @@
                   <div class="col s12 m6 l6">
                     <div class="card">
                       <div class="card-image">
-                        <img src="images/gallary/8.png">
+                        <img src="<?= base_url('vendor/'); ?>images/gallary/8.png">
                         <span class="card-title">Card Title</span>
                         <a class="btn-floating btn-large halfway-fab waves-effect waves-light gradient-45deg-red-pink gradient-shadow">
                             <i class="material-icons">add</i>
@@ -490,7 +454,7 @@
                   <div class="col s12 m6 l6">
                     <div class="card horizontal">
                       <div class="card-image">
-                        <img src="images/gallary/11.png">
+                        <img src="<?= base_url('vendor/'); ?>images/gallary/11.png">
                       </div>
                       <div class="card-stacked">
                         <div class="card-content">
@@ -505,7 +469,7 @@
                   <div class="col s12 m6 l6">
                     <div class="card horizontal">
                       <div class="card-image">
-                        <img src="images/gallary/18.png">
+                        <img src="<?= base_url('vendor/'); ?>images/gallary/18.png">
                       </div>
                       <div class="card-stacked">
                         <div class="card-content">
@@ -534,7 +498,7 @@
                   <div class="col s12 m4 l4">
                     <div class="card">
                       <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/gallary/12.png" alt="office">
+                        <img class="activator" src="<?= base_url('vendor/'); ?>images/gallary/12.png" alt="office">
                       </div>
                       <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Card Title
@@ -558,7 +522,7 @@
                   <div class="col s12 m4 l4">
                     <div class="card">
                       <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/gallary/19.png">
+                        <img class="activator" src="<?= base_url('vendor/'); ?>images/gallary/19.png">
                       </div>
                       <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Card Title
@@ -583,7 +547,7 @@
                   <div class="col s12 m4 l4">
                     <div class="card sticky-action">
                       <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/gallary/21.png">
+                        <img class="activator" src="<?= base_url('vendor/'); ?>images/gallary/21.png">
                       </div>
                       <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Card Title
@@ -624,7 +588,7 @@
               <div class="col s12 m6 l6">
                 <div class="card small">
                   <div class="card-image">
-                    <img src="images/gallary/23.png" alt="sample">
+                    <img src="<?= base_url('vendor/'); ?>images/gallary/23.png" alt="sample">
                     <span class="card-title">Card Title</span>
                   </div>
                   <div class="card-content">
@@ -645,7 +609,7 @@
               <div class="col s12 m7 l7">
                 <div class="card medium">
                   <div class="card-image">
-                    <img src="images/gallary/25.png" alt="sample">
+                    <img src="<?= base_url('vendor/'); ?>images/gallary/25.png" alt="sample">
                     <span class="card-title">Card Title</span>
                   </div>
                   <div class="card-content">
@@ -666,7 +630,7 @@
               <div class="col s12 m8 l8">
                 <div class="card large">
                   <div class="card-image">
-                    <img src="images/gallary/28.png" alt="sample">
+                    <img src="<?= base_url('vendor/'); ?>images/gallary/28.png" alt="sample">
                     <span class="card-title">Card Title</span>
                   </div>
                   <div class="card-content">
@@ -789,85 +753,85 @@
               <div id="chatapp" class="col s12">
                 <div class="collection border-none">
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-1.png" alt="" class="circle cyan">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-1.png" alt="" class="circle cyan">
                       <span class="line-height-0">Elizabeth Elliott </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">5.00 AM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Thank you </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-2.png" alt="" class="circle deep-orange accent-2">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-2.png" alt="" class="circle deep-orange accent-2">
                       <span class="line-height-0">Mary Adams </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">4.14 AM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Hello Boo </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-3.png" alt="" class="circle teal accent-4">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-3.png" alt="" class="circle teal accent-4">
                       <span class="line-height-0">Caleb Richards </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">9.00 PM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Keny ! </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-4.png" alt="" class="circle cyan">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-4.png" alt="" class="circle cyan">
                       <span class="line-height-0">June Lane </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">4.14 AM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Ohh God </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-5.png" alt="" class="circle red accent-2">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-5.png" alt="" class="circle red accent-2">
                       <span class="line-height-0">Edward Fletcher </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">5.15 PM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Love you </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-6.png" alt="" class="circle deep-orange accent-2">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-6.png" alt="" class="circle deep-orange accent-2">
                       <span class="line-height-0">Crystal Bates </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">8.00 AM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Can we </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-7.png" alt="" class="circle cyan">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-7.png" alt="" class="circle cyan">
                       <span class="line-height-0">Nathan Watts </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">9.53 PM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Great! </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-8.png" alt="" class="circle red accent-2">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-8.png" alt="" class="circle red accent-2">
                       <span class="line-height-0">Willard Wood </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">4.20 AM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Do it </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-9.png" alt="" class="circle teal accent-4">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-9.png" alt="" class="circle teal accent-4">
                       <span class="line-height-0">Ronnie Ellis </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">5.30 PM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Got that </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-1.png" alt="" class="circle cyan">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-1.png" alt="" class="circle cyan">
                       <span class="line-height-0">Gwendolyn Wood </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">4.34 AM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Like you </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-2.png" alt="" class="circle red accent-2">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-2.png" alt="" class="circle red accent-2">
                       <span class="line-height-0">Daniel Russell </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">12.00 AM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Thank you </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-3.png" alt="" class="circle teal accent-4">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-3.png" alt="" class="circle teal accent-4">
                       <span class="line-height-0">Sarah Graves </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">11.14 PM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Okay you </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-4.png" alt="" class="circle red accent-2">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-4.png" alt="" class="circle red accent-2">
                       <span class="line-height-0">Andrew Hoffman </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">7.30 PM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Can do </p>
                     </a>
                   <a href="#!" class="collection-item avatar border-none">
-                      <img src="images/avatar/avatar-5.png" alt="" class="circle cyan">
+                      <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-5.png" alt="" class="circle cyan">
                       <span class="line-height-0">Camila Lynch </span>
                       <span class="medium-small right blue-grey-text text-lighten-3">2.00 PM</span>
                       <p class="medium-small blue-grey-text text-lighten-3">Leave it </p>
@@ -960,33 +924,4 @@
     <!-- END MAIN -->
     <!-- //////////////////////////////////////////////////////////////////////////// -->
     <!-- START FOOTER -->
-    <footer class="page-footer gradient-45deg-light-blue-cyan">
-      <div class="footer-copyright">
-        <div class="container">
-          <span>Copyright ©
-              <script type="text/javascript">
-                document.write(new Date().getFullYear());
-              </script> <a class="grey-text text-lighten-2" href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PIXINVENT</a> All rights reserved.</span>
-          <span class="right hide-on-small-only"> Design and Developed by <a class="grey-text text-lighten-2" href="https://pixinvent.com/">PIXINVENT</a></span>
-        </div>
-      </div>
-    </footer>
-    <!-- END FOOTER -->
-    <!-- ================================================
-    Scripts
-    ================================================ -->
-    <!-- jQuery Library -->
-    <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
-    <!--materialize js-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!--prism-->
-    <script type="text/javascript" src="vendors/prism/prism.js"></script>
-    <!--scrollbar-->
-    <script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <!--custom-script.js - Add your own theme custom JS-->
-    <script type="text/javascript" src="js/custom-script.js"></script>
-</body>
-
-</html>
+   
