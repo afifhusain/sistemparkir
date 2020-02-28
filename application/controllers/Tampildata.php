@@ -24,6 +24,8 @@ class Tampildata extends CI_Controller {
 
 	public function adminview()
 	{
+		
+		
 		$this->load->view('desain/admheader');
 		$this->load->view('adminview/tampildata');
 		$this->load->view('desain/admfooter');

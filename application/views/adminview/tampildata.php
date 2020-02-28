@@ -16,16 +16,16 @@
           <ul class="left">
             <li>
               <h1 class="logo-wrapper">
-                <a href="index.html" class="brand-logo darken-1">
+                <!-- <a href="index.html" class="brand-logo darken-1">
                     <img src="<?= base_url('vendor/'); ?>images/logo/materialize-logo.png" alt="materialize logo">
                     <span class="logo-text hide-on-med-and-down">Materialize</span>
-                  </a>
+                  </a> -->
               </h1>
             </li>
           </ul>
           <div class="header-search-wrapper hide-on-med-and-down">
             <i class="material-icons">search</i>
-            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize" />
+            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Cari Data Kendaraan" />
           </div>
           <ul class="right hide-on-med-and-down">
             <li>
@@ -235,10 +235,7 @@
               </a>
               </li>
               <li>
-                <a class="btn waves-effect waves-light gradient-45deg-red-pink" href="https://pixinvent.com/materialize-material-design-admin-template/landing/" target="_blank">
-                  <i class="material-icons white-text">file_upload</i>Upgrade to Pro!
-                </a>
-              </li>
+               
             </ul>
           </li>
         </ul>
@@ -258,392 +255,26 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col s10 m6 l6">
-                <h5 class="breadcrumbs-title">Cards</h5>
+              <div class="col s12">
+               <h5 class="breadcrumbs-title center"> <i class="material-icons">directions_car</i> Halaman Data Kendaraan</h5>
+                
                 <ol class="breadcrumbs">
-                  <li><a href="index.html">Dashboard</a>
-                  </li>
-                  <li><a href="#">UI Elements</a>
-                  </li>
-                  <li class="active">Cards</li>
+                  
                 </ol>
               </div>
-              <div class="col s2 m6 l6">
-                <a class="btn dropdown-settings waves-effect waves-light breadcrumbs-btn right" href="#!" data-activates="dropdown1">
-                    <i class="material-icons hide-on-med-and-up">settings</i>
-                    <span class="hide-on-small-onl">Settings</span>
-                    <i class="material-icons right">arrow_drop_down</i>
-                  </a>
-                <ul id="dropdown1" class="dropdown-content">
-                  <li><a href="#!" class="grey-text text-darken-2">Access<span class="badge">1</span></a>
-                  </li>
-                  <li><a href="#!" class="grey-text text-darken-2">Profile<span class="new badge">2</span></a>
-                  </li>
-                  <li><a href="#!" class="grey-text text-darken-2">Notifications</a>
-                  </li>
-                </ul>
-              </div>
+            
             </div>
           </div>
         </div>
         <!--breadcrumbs end-->
-        <!--start container-->
-        <div class="container">
-          <p class="caption">Cards are a convenient means of displaying content composed of different types of objects. They’re also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.</p>
-          <!--Card Panel-->
-          <div class="divider"></div>
-          <div id="card-panel-type" class="section">
-            <h4 class="header">Card Panel</h4>
-            <div class="row">
-              <div class="col s12">
-                <p>For a simpler card with less markup, try using a card panel which just has padding and a shadow effect</p>
-              </div>
-              <div class="col s12">
-                <div class="row">
-                  <div class="col s12 m4 l4">
-                    <div class="card-panel yellow darken-4">
-                      <span class="white-text">I am a very simple solid color card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
-                    </div>
-                  </div>
-                  <div class="col s12 m4 l4">
-                    <div class="card-panel gradient-45deg-light-blue-cyan gradient-shadow">
-                      <span class="white-text">I am a very simple gradient color card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
-                    </div>
-                  </div>
-                  <div class="col s12 m4 l4">
-                    <div class="card-panel gradient-45deg-red-pink gradient-shadow">
-                      <span class="white-text">I am a very simple gradient color card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <!--Basic Card-->
-          <div id="basic-card" class="section">
-            <h4 class="header">Basic Card</h4>
-            <div class="row">
-              <div class="col s12">
-                <p>Basic card good at containing small bits of information.</p>
-              </div>
-              <div class="col s12 m12 l12">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card light-blue">
-                      <div class="card-content white-text">
-                        <span class="card-title">Card Title</span>
-                        <p>I am a very simple card with solid background & link. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#!" class="white-text">This is a link</a>
-                        <a href="#!" class="white-text">This is a link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s12 m6 l6">
-                    <div class="card gradient-45deg-light-blue-cyan gradient-shadow">
-                      <div class="card-content white-text">
-                        <span class="card-title">Card Title</span>
-                        <p>I am a very simple card with gradient background & button. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#!" class="waves-effect waves-light btn gradient-45deg-red-pink">Button</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Image Card-->
-          <div class="divider"></div>
-          <div id="image-card" class="section">
-            <h4 class="header">Image Card</h4>
-            <div class="row">
-              <div class="col s12">
-                <p>Here is the standard card with an image thumbnail.</p>
-              </div>
-              <div class="col s12 m12 l12">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="<?= base_url('vendor/'); ?>images/gallary/4.png" alt="sample">
-                        <span class="card-title">Card Title</span>
-                      </div>
-                      <div class="card-content">
-                        <p>I am a very simple card with link. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#">This is a link</a>
-                        <a href='#'>This is a link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="<?= base_url('vendor/'); ?>images/gallary/3.png" alt="sample">
-                        <span class="card-title">Card Title</span>
-                      </div>
-                      <div class="card-content">
-                        <p>I am a very simple card with button. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#!" class="waves-effect waves-light btn gradient-45deg-red-pink">Button</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- FABs in Cards -->
-          <div class="divider"></div>
-          <div id="fabs-card" class="section">
-            <h4 class="header">FABs in Cards</h4>
-            <div class="row">
-              <div class="col s12">
-                <p>Here is an image card with a Floating Action Button.</p>
-              </div>
-              <div class="col s12 m12 l12">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="<?= base_url('vendor/'); ?>images/gallary/6.png">
-                        <span class="card-title">Card Title</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red">
-                            <i class="material-icons">add</i>
-                          </a>
-                      </div>
-                      <div class="card-content">
-                        <p>I am a very simple card with small size solid color fab button. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="<?= base_url('vendor/'); ?>images/gallary/8.png">
-                        <span class="card-title">Card Title</span>
-                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light gradient-45deg-red-pink gradient-shadow">
-                            <i class="material-icons">add</i>
-                          </a>
-                      </div>
-                      <div class="card-content">
-                        <p>I am a very simple card with large size gradient color fab button. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Horizontal Card -->
-          <div class="divider"></div>
-          <div id="horizontal-card" class="section">
-            <h4 class="header">Horizontal Card</h4>
-            <div class="row">
-              <div class="col s12">
-                <p>Here is the standard card with a horizontal image.</p>
-              </div>
-              <div class="col s12 m12 l12">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card horizontal">
-                      <div class="card-image">
-                        <img src="<?= base_url('vendor/'); ?>images/gallary/11.png">
-                      </div>
-                      <div class="card-stacked">
-                        <div class="card-content">
-                          <p>I am a very simple card with link. I am good at containing small bits of information.</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="#">This is a link</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s12 m6 l6">
-                    <div class="card horizontal">
-                      <div class="card-image">
-                        <img src="<?= base_url('vendor/'); ?>images/gallary/18.png">
-                      </div>
-                      <div class="card-stacked">
-                        <div class="card-content">
-                          <p>I am a very simple card with button. I am good at containing small bits of.</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="#!" class="waves-effect waves-light btn gradient-45deg-red-pink">Button</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Card Reveal-->
-          <div class="divider"></div>
-          <div id="card-reveal" class="section">
-            <h4 class="header">Card Reveal</h4>
-            <div class="row">
-              <div class="col s12">
-                <p>Here you can add a card that reveals more information once clicked.</p>
-              </div>
-              <div class="col s12 m12 l12">
-                <div class="row">
-                  <div class="col s12 m4 l4">
-                    <div class="card">
-                      <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="<?= base_url('vendor/'); ?>images/gallary/12.png" alt="office">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title
-                            <i class="material-icons right">more_vert</i>
-                          </span>
-                        <p><a href="#">This is a link</a>
-                        </p>
-                      </div>
-                      <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title
-                            <i class="material-icons right">close</i>
-                          </span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                      </div>
-                    </div>
-                    <p>
-                      Just add the <code class=" language-markup">card-reveal</code> div with a <code class=" language-markup">span.card-title</code> inside to make this work. Add the class
-                      <code class=" language-markup">activator</code> to an element inside the card to allow it to open the card reveal.
-                    </p>
-                  </div>
-                  <div class="col s12 m4 l4">
-                    <div class="card">
-                      <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="<?= base_url('vendor/'); ?>images/gallary/19.png">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title
-                            <i class="material-icons right">more_vert</i>
-                          </span>
-                        <p><a href="#!">This is a link</a></p>
-                      </div>
-                      <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title
-                            <i class="material-icons right">close</i>
-                            </i>
-                          </span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#">This is a link</a>
-                        <a href="#">This is a link</a>
-                      </div>
-                    </div>
-                    <p>The default state is having the card-reveal go over the card-action.</p>
-                  </div>
-                  <div class="col s12 m4 l4">
-                    <div class="card sticky-action">
-                      <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="<?= base_url('vendor/'); ?>images/gallary/21.png">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title
-                            <i class="material-icons right">more_vert</i>
-                          </span>
-                        <p><a href="#!">This is a link</a></p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#">This is a link</a>
-                        <a href="#">This is a link</a>
-                      </div>
-                      <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title
-                            <i class="material-icons right">close</i>
-                            </i>
-                          </span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                      </div>
-                    </div>
-                    <p>You can make your card-action always visible by adding the class <code class=" language-markup">sticky-action</code> to the overall card.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Tabs in Cards-->
-          <div class="divider"></div>
+       
+         
 
-          <!--Card Size-->
-          <div class="divider"></div>
-          <div id="card-size" class="section">
-            <h4 class="header">Card Size</h4>
-            <div class="row section">
-              <div class="col s12">
-                <p class="caption">Small</p>
-                <p>The Small Card limits the height of the card to 300px.</p>
-              </div>
-              <div class="col s12 m6 l6">
-                <div class="card small">
-                  <div class="card-image">
-                    <img src="<?= base_url('vendor/'); ?>images/gallary/23.png" alt="sample">
-                    <span class="card-title">Card Title</span>
-                  </div>
-                  <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row section">
-              <div class="col s12">
-                <p class="caption">Medium</p>
-                <p>The Medium Card limits the height of the card to 400px.</p>
-              </div>
-              <div class="col s12 m7 l7">
-                <div class="card medium">
-                  <div class="card-image">
-                    <img src="<?= base_url('vendor/'); ?>images/gallary/25.png" alt="sample">
-                    <span class="card-title">Card Title</span>
-                  </div>
-                  <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row section">
-              <div class="col s12">
-                <p class="caption">Large</p>
-                <p>The Large Card limits the height of the card to 500px.</p>
-              </div>
-              <div class="col s12 m8 l8">
-                <div class="card large">
-                  <div class="card-image">
-                    <img src="<?= base_url('vendor/'); ?>images/gallary/28.png" alt="sample">
-                    <span class="card-title">Card Title</span>
-                  </div>
-                  <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
+         
+
+
+
 
           <!--end container-->
       </section>
