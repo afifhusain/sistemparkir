@@ -16,10 +16,10 @@
           <ul class="left">
             <li>
               <h1 class="logo-wrapper">
-                <!-- <a href="index.html" class="brand-logo darken-1">
-                    <img src="<?= base_url('vendor/'); ?>images/logo/materialize-logo.png" alt="materialize logo">
-                    <span class="logo-text hide-on-med-and-down">Materialize</span>
-                  </a> -->
+                <a href="index.html" class="brand-logo darken-1">
+                   <!--  <img src="<?= base_url('vendor/'); ?>images/logo/logo.png" alt="materialize logo"> -->
+                    <span class="logo-text hide-on-med-and-down">Sistem Parkir</span>
+                  </a>
               </h1>
             </li>
           </ul>
@@ -251,7 +251,7 @@
         <div id="breadcrumbs-wrapper">
           <!-- Search for small screen -->
           <div class="header-search-wrapper grey lighten-2 hide-on-large-only">
-            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Cari Data Kendaraan">
           </div>
           <div class="container">
             <div class="row">
@@ -269,7 +269,36 @@
         <!--breadcrumbs end-->
        
          
+<div class="container">
+      <table class="striped">
+        <thead class="teal lighten-2">
+          <tr>
+              <th>NO</th>
+              <th>No Faktur</th>
+              <th>No Plat</th>
+              <th>Jenis Mobil</th>
+              <th>Merk Mobil</th>
+              <th>Warna</th>
+              <th>Tanggal Masuk</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <?php $i=1; ?>
+          <?php foreach ($kendaraan as $kd) : ?>
+          <tr>
+            <td><?= $i++; ?></td>
+            <td><?= $kd['no_faktur']; ?></td>
+            <td><?= $kd['no_plat']; ?></td>
+            <td><?= $kd['jenis_mobil']; ?></td>
+            <td><?= $kd['merk_mobil']; ?></td>
+            <td><?= $kd['warna_mobil']; ?></td>
+            <td><?= $kd['waktu_masuk']; ?></td>
+          </tr>
+        <?php endforeach; ?>
+        </tbody>
+      </table>
+</div>
          
          
 

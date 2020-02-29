@@ -28,6 +28,11 @@ class Modeltampildata extends CI_model{
   	
   }
 
+  public function tambahDataKendaraan()
+  {
+    
+  }
+
 
 
 
