@@ -12,6 +12,7 @@ class Tampildata extends CI_Controller {
 
 	public function admin()
 	{
+		$data['title'] = 'Halaman Tampil Data Kendaraan';
 		$data['kendaraan'] = $this->Modeltampildata->tampildataAdmin();
 
 		//$this->load->view('desain/header');
@@ -35,18 +36,19 @@ class Tampildata extends CI_Controller {
  
 	public function user()
 	{
+		$data['title'] = 'Halaman Tampil Data Kendaraan';
 		$data['kendaraan'] = $this->Modeltampildata->tampildataUser();
 
-		$this->load->view('desain/header');
+		$this->load->view('desain/header', $data);
 		$this->load->view('tampildata/user', $data);
 		$this->load->view('desain/footer');
 	}
-	public function tambahdata()
-	{
-		$this->load->view('desain/header');
-		$this->load->view('tampildata/tambahdata');
-		$this->load->view('desain/footer');
-	}
+	// public function tambahdata()
+	// {
+	// 	$this->load->view('desain/header');
+	// 	$this->load->view('tampildata/tambahdata');
+	// 	$this->load->view('desain/footer');
+	// }
 
 
 

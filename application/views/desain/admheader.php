@@ -13,7 +13,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Halaman Tampil Data</title>
+    <title><?= $title; ?></title>
     <!-- Favicons-->
     <link rel="icon" href="<?= base_url('vendor/'); ?>images/favicon/favicon-32x32.png" sizes="32x32">
     <!-- Favicons-->
