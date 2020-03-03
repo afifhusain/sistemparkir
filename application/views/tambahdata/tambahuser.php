@@ -276,60 +276,56 @@
 <div class="container center">
 
 
-<div class="col s12">
+        <div class="col s12">
           <div class="icon-block">
-            <h5 class="center light-blue-text"><i class="material-icons">library_add</i>
-            Tambah Data Kendaraan
+            <h5 class="center light-blue-text"><i class="material-icons">account_box</i>
+            <?= $title; ?>
             </h5>
 
             <p class="light"></p>
           </div>
         </div>
+
+  
+  <?= $this->session->flashdata('message');  ?>
  
 
-
-
-
-    <form action="" method="post">
+ <form method="post" action="<?= base_url('tambahdata/user');?>">
    
         <div class="input-field">
-          <i class="material-icons prefix">confirmation_number</i>
-          <input id="no_faktur" type="text"  name="no_faktur">
-          <label for="icon_prefix">Nomor Faktur</label>
-          <?= form_error('no_faktur', ' <small class="red lighten-4">', '</small>'); ?>
+          <i class="material-icons prefix">account_circle</i>
+          <input id="username" type="text"  name="username">
+          <label for="icon_prefix">Username</label>
+          <?= form_error('username', ' <small class="text-danger pl-3">', '</small>'); ?>
         </div>
 
 
         <div class="input-field">
-          <i class="material-icons prefix">local_offer</i>
-          <input id="no_plat" type="text"  name="no_plat">
-          <label for="icon_telephone">Nomor Plat</label>
-          <?= form_error('no_plat', ' <small class="red lighten-4">', '</small>'); ?>
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email"  name="email">
+          <label for="icon_telephone">Email</label>
+          <?= form_error('email', ' <small class="text-danger pl-3">', '</small>'); ?>
         </div>
 
          <div class="input-field">
-          <i class="material-icons prefix">local_taxi</i>
-          <input id="jenis_mobil" name="jenis_mobil" type="text" >
-          <label for="icon_telephone">Jenis Mobil</label>
-        <?= form_error('jenis_mobil', ' <small  class="red lighten-4">', '</small>'); ?>
+          <i class="material-icons prefix">vpn_key</i>
+          <input id="pas1" name="pas1" type="password" >
+          <label for="icon_telephone">Password</label>
+       
+        <?= form_error('pas1', ' <small  class="text-danger pl-3">', '</small>'); ?>
         </div>    
 
         <div class="input-field">
-          <i class="material-icons prefix">label_outline</i>
-          <input id="merk_mobil" name="merk_mobil" type="text" >
-          <label for="icon_telephone">Merk Mobil</label>
-          <?= form_error('merk_mobil', ' <small  class="red lighten-4">', '</small>'); ?>
-        </div>  
-
-        <div class="input-field">
-          <i class="material-icons prefix">color_lens</i>
-          <input id="warna_mobil" name="warna_mobil" type="text" >
-          <label for="icon_telephone">Warna Mobil</label>
-          <?= form_error('warna_mobil', ' <small  class="red lighten-4">', '</small>'); ?>
+          <i class="material-icons prefix">vpn_key</i>
+          <input id="pas2" name="pas2" type="password" >
+          <label for="icon_telephone">Confirm Password</label>
         </div>    
 
      
-      <button class="waves-effect waves-light btn-small" type="submit"><i class="material-icons left">cloud</i>Tambah Data</button>
+      <button class="waves-effect waves-light btn-small" type="submit"><i class="material-icons left">cloud</i>Tambah Petugas</button>
+
+    </form>
+  
 
 
   

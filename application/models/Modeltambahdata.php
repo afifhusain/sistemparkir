@@ -14,5 +14,17 @@ public function tambahKendaraan()
 	$this->db->insert('tampildata', $data);
 }
 
+public function tambahPetugasParkir()
+{
+	$data = [
+		'username' => htmlspecialchars($this->input->post('username', true)),
+		'password' => password_hash($this->input->post('pas1'), PASSWORD_DEFAULT),
+		'email' => htmlspecialchars($this->input->post('email', true)),
+		'hak_akses' => 'petugas'			
+
+	];
+	$this->db->insert('user', $data);
+}
+
 
 }
