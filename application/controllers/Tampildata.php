@@ -29,6 +29,7 @@ class Tampildata extends CI_Controller {
 		$data['kendaraan'] = $this->Modeltampildata->tampildataAdmin();
 		
 		
+		
 		$this->load->view('desain/admheader', $data);
 		$this->load->view('adminview/tampildata', $data);
 		$this->load->view('desain/admfooter');
@@ -43,13 +44,13 @@ class Tampildata extends CI_Controller {
 		$this->load->view('tampildata/user', $data);
 		$this->load->view('desain/footer');
 	}
-	// public function tambahdata()
-	// {
-	// 	$this->load->view('desain/header');
-	// 	$this->load->view('tampildata/tambahdata');
-	// 	$this->load->view('desain/footer');
-	// }
 
+	public function hapus($id)
+	{
+		$this->Modeltampildata->hapusData($id);
+		$this->session->set_flashdata('pesan', 'Berhasil dihapus');
+		redirect('tampildata/adminview');
+	}
 
 
 

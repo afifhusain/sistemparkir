@@ -257,6 +257,10 @@
             <div class="row">
               <div class="col s12">
                <h5 class="breadcrumbs-title center"> <i class="material-icons">directions_car</i> Halaman Data Kendaraan</h5>
+
+              <a href="<?= base_url('tambahdata/kendaraan'); ?>" class="waves-effect waves-light btn-small"><i class="material-icons left">directions_car</i>Tambah Data Kendaraan</a>
+
+               <h4 class="red darken-4"><?= $this->session->flashdata('pesan');  ?></h4>
                 
                 <ol class="breadcrumbs">
                   
@@ -280,6 +284,7 @@
               <th>Merk Mobil</th>
               <th>Warna</th>
               <th>Tanggal Masuk</th>
+              <th class="center">Hapus</th>
           </tr>
         </thead>
 
@@ -294,6 +299,7 @@
             <td><?= $kd['merk_mobil']; ?></td>
             <td><?= $kd['warna_mobil']; ?></td>
             <td><?= $kd['waktu_masuk']; ?></td>
+            <td class="center"><a href="<?= base_url('tampildata/hapus'); ?>/<?= $kd['id_tampil']; ?>" onclick="return confirm ('Hapus Data Kendaraan');"><i class="material-icons">delete_forever</i></a></td>
           </tr>
         <?php endforeach; ?>
         </tbody>
