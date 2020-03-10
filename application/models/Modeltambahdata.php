@@ -1,5 +1,6 @@
 <?php 
 
+date_default_timezone_set('Asia/Jakarta'); 
 class Modeltambahdata extends CI_model{
 
 public function tambahKendaraan()
@@ -9,8 +10,12 @@ public function tambahKendaraan()
 		"no_plat" => $this->input->post('no_plat', true),
 		"jenis_mobil" => $this->input->post('jenis_mobil', true),
 		"merk_mobil" => $this->input->post('merk_mobil', true),
-		"warna_mobil" => $this->input->post('warna_mobil', true)
+		"warna_mobil" => $this->input->post('warna_mobil', true),
+		"waktu_masuk" => date('Y-m-d H:i:s'),
+		"status" => 'masuk'
 	];
+
+	
 	$this->db->insert('tampildata', $data);
 }
 

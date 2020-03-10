@@ -193,45 +193,27 @@
                   </a>
               </li>
               <li class="bold">
-                <a href="cards-basic.html" class="waves-effect waves-cyan">
+                <a href="<?= base_url('tampildata/adminview'); ?>" class="waves-effect waves-cyan">
                     <i class="material-icons">cast</i>
-                    <span class="nav-text">Cards</span>
+                    <span class="nav-text">Tampil Data Kendaraan</span>
                   </a>
               </li>
               <li class="bold">
-                <a href="ui-basic-buttons.html" class="waves-effect waves-cyan">
+                <a href="<?= base_url('tambahdata/kendaraan'); ?>" class="waves-effect waves-cyan">
+                    <i class="material-icons">cast</i>
+                    <span class="nav-text">Tambah Data Kendaraan</span>
+                  </a>
+              </li>
+              <li class="bold">
+                <a href="<?= base_url('tambahdata/petugas'); ?>" class="waves-effect waves-cyan">
                     <i class="material-icons">insert_link</i>
-                    <span class="nav-text">Buttons</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="form-layouts.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">format_color_text</i>
-                    <span class="nav-text">Forms</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="css-typography.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">format_size</i>
-                    <span class="nav-text">Typography</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="css-color.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">invert_colors</i>
-                    <span class="nav-text">Color</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="table-basic.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">border_all</i>
-                    <span class="nav-text">Table</span>
+                    <span class="nav-text">Tambah Petugas Parkir</span>
                   </a>
               </li>
               <li class="bold">
                 <a href="ui-icons.html" class="waves-effect waves-cyan">
                 <i class="material-icons">lightbulb_outline</i>
-                <span class="nav-text">Icons</span>
+                <span class="nav-text">Logout</span>
               </a>
               </li>
               <li>
@@ -285,6 +267,7 @@
               <th>Warna</th>
               <th>Tanggal Masuk</th>
               <th class="center">Hapus</th>
+              <th class="center">Ubah</th>
           </tr>
         </thead>
 
@@ -300,6 +283,7 @@
             <td><?= $kd['warna_mobil']; ?></td>
             <td><?= $kd['waktu_masuk']; ?></td>
             <td class="center"><a href="<?= base_url('tampildata/hapus'); ?>/<?= $kd['id_tampil']; ?>" onclick="return confirm ('Hapus Data Kendaraan');"><i class="material-icons">delete_forever</i></a></td>
+            <td class="center"><i class="material-icons">edit</i></td>
           </tr>
         <?php endforeach; ?>
         </tbody>

@@ -34,7 +34,7 @@ class Tambahdata extends CI_Controller {
 
 	}
 
-	public function user()
+	public function petugas()
 	{
 		$data['title'] = 'Tambah Data Petugas Parkir';
 
@@ -57,7 +57,7 @@ class Tambahdata extends CI_Controller {
 		} else {
 			$this->Modeltambahdata->tambahPetugasParkir();
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Petugas Berhasil Ditambahkan</div>');
-			redirect('tambahdata/user');
+			redirect('tambahdata/petugas');
 
 		}
 
