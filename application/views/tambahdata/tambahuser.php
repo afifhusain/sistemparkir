@@ -98,13 +98,14 @@
                 <img src="<?= base_url('vendor/'); ?>images/avatar/avatar-7.png" alt="" class="circle responsive-img valign profile-image cyan">
               </div>
             
-                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown-nav">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown-nav">Admin<i class="mdi-navigation-arrow-drop-down right"></i></a>
                 <p class="user-roal">Administrator</p>
               </div>
          
           </li>
           <li class="no-padding">
-            <ul class="collapsible" data-collapsible="accordion">
+        
+         <ul class="collapsible" data-collapsible="accordion">
               <li class="bold">
                 <a href="index.html" class="waves-effect waves-cyan">
                     <i class="material-icons">pie_chart_outlined</i>
@@ -119,45 +120,27 @@
               </li>
               <li class="bold">
                 <a href="<?= base_url('tambahdata/kendaraan'); ?>" class="waves-effect waves-cyan">
-                    <i class="material-icons">insert_link</i>
+                    <i class="material-icons">cast</i>
                     <span class="nav-text">Tambah Data Kendaraan</span>
                   </a>
               </li>
               <li class="bold">
-                <a href="#" class="waves-effect waves-cyan">
-                    <i class="material-icons">format_color_text</i>
-                    <span class="nav-text">Tambah Data Petugas</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="css-typography.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">format_size</i>
-                    <span class="nav-text">Typography</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="css-color.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">invert_colors</i>
-                    <span class="nav-text">Color</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="table-basic.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">border_all</i>
-                    <span class="nav-text">Table</span>
+                <a href="<?= base_url('tambahdata/petugas'); ?>" class="waves-effect waves-cyan">
+                    <i class="material-icons">insert_link</i>
+                    <span class="nav-text">Tambah Petugas Parkir</span>
                   </a>
               </li>
               <li class="bold">
                 <a href="ui-icons.html" class="waves-effect waves-cyan">
                 <i class="material-icons">lightbulb_outline</i>
-                <span class="nav-text">Icons</span>
+                <span class="nav-text">Logout</span>
               </a>
               </li>
               <li>
                
-            </ul>
-          </li>
-        </ul>
+            </ul>   
+      
+
         <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only">
             <i class="material-icons">menu</i>
           </a>

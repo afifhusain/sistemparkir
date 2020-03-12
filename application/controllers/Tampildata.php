@@ -53,5 +53,8 @@ class Tampildata extends CI_Controller {
 	}
 
 
+	
+
+
 
 }

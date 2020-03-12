@@ -179,7 +179,7 @@
                         <i class="material-icons">keyboard_tab</i> Logout</a>
                   </li>
                 </ul>
-                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown-nav">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown-nav">Admin<i class="mdi-navigation-arrow-drop-down right"></i></a>
                 <p class="user-roal">Administrator</p>
               </div>
             </div>
@@ -193,45 +193,27 @@
                   </a>
               </li>
               <li class="bold">
-                <a href="cards-basic.html" class="waves-effect waves-cyan">
+                <a href="<?= base_url('tampildata/adminview'); ?>" class="waves-effect waves-cyan">
                     <i class="material-icons">cast</i>
-                    <span class="nav-text">Cards</span>
+                    <span class="nav-text">Tampil Data Kendaraan</span>
                   </a>
               </li>
               <li class="bold">
-                <a href="ui-basic-buttons.html" class="waves-effect waves-cyan">
+                <a href="<?= base_url('tambahdata/kendaraan'); ?>" class="waves-effect waves-cyan">
+                    <i class="material-icons">cast</i>
+                    <span class="nav-text">Tambah Data Kendaraan</span>
+                  </a>
+              </li>
+              <li class="bold">
+                <a href="<?= base_url('tambahdata/petugas'); ?>" class="waves-effect waves-cyan">
                     <i class="material-icons">insert_link</i>
-                    <span class="nav-text">Buttons</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="form-layouts.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">format_color_text</i>
-                    <span class="nav-text">Forms</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="css-typography.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">format_size</i>
-                    <span class="nav-text">Typography</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="css-color.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">invert_colors</i>
-                    <span class="nav-text">Color</span>
-                  </a>
-              </li>
-              <li class="bold">
-                <a href="table-basic.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">border_all</i>
-                    <span class="nav-text">Table</span>
+                    <span class="nav-text">Tambah Petugas Parkir</span>
                   </a>
               </li>
               <li class="bold">
                 <a href="ui-icons.html" class="waves-effect waves-cyan">
                 <i class="material-icons">lightbulb_outline</i>
-                <span class="nav-text">Icons</span>
+                <span class="nav-text">Logout</span>
               </a>
               </li>
               <li>

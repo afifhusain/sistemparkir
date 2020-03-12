@@ -179,7 +179,7 @@
                         <i class="material-icons">keyboard_tab</i> Logout</a>
                   </li>
                 </ul>
-                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown-nav">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown-nav">Admin<i class="mdi-navigation-arrow-drop-down right"></i></a>
                 <p class="user-roal">Administrator</p>
               </div>
             </div>
@@ -268,6 +268,8 @@
               <th>Tanggal Masuk</th>
               <th class="center">Hapus</th>
               <th class="center">Ubah</th>
+              <th class="center">Keluar</th>
+              <th class="center">Faktur</th>
           </tr>
         </thead>
 
@@ -284,6 +286,8 @@
             <td><?= $kd['waktu_masuk']; ?></td>
             <td class="center"><a href="<?= base_url('tampildata/hapus'); ?>/<?= $kd['id_tampil']; ?>" onclick="return confirm ('Hapus Data Kendaraan');"><i class="material-icons">delete_forever</i></a></td>
             <td class="center"><i class="material-icons">edit</i></td>
+            <td class="center"><i class="material-icons">fast_forward</i></td>
+            <td class="center"><i class="material-icons">local_printshop</i></td>
           </tr>
         <?php endforeach; ?>
         </tbody>
